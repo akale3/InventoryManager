@@ -1,0 +1,36 @@
+<div class="container">
+  <legend>Select Item for Wholesaler</legend>
+  <div class="input-group" style="padding-bottom:10px;">
+    <input class="form-control" type="text" name="search" autocomplete="off" placeholder="Start searching item for retailer"/>
+  </div>
+
+  <div id="wholesalerItemTable">
+    <table class="table table-bordered table-responsive-md table-striped text-center">
+      <thead>
+      <tr>
+        <th class="text-center">Item Name</th>
+        <th class="text-center">Price</th>
+        <th class="text-center">Quantity</th>
+        <th class="text-center">Total Amount</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of items; let id = index">
+        <td>
+          <span>{{item.itemName}}</span>
+        </td>
+        <td>
+          <span>{{item.wholesalerPrice}}</span>
+        </td>
+        <td>
+          <span>{{item.quantity}}</span>
+        </td>
+        <td>
+          <span>{{item.wholesalerPrice*item.quantity}}</span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
