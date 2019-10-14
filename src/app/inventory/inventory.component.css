@@ -1,0 +1,11 @@
+.isLow{
+  color: darkorange;
+}
+
+.isUnavailable{
+  color: red;
+}
+
+.isInAmple{
+  color: green;
+}

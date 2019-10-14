@@ -1,7 +1,21 @@
-No customer name means cash payment
-Add Customer Name.
-Paid vs balance receipts
-Print functionality
-on bill payment reduce quantity from inventory
-provide option to update inventory
-Connect to database
+In Progress:
+  Connect to database
+
+Requirement:
+  on bill payment reduce quantity from inventory
+  Paid vs balance receipts
+  Print functionality
+  Display all remaining due members bill
+  Create app exe
+
+Done:
+  If payment type is credit give option to pay none/partial amount and show remaining due.
+  Display all out of order list [Available = 0]
+  Display low on available volume list [Available < 10]
+  Wholesaler different rates than retailer
+  Add/Delete entry to list for billing
+  Add Customer Name.
+  Add Payment type
+  No customer name means cash payment
+  Provide option to add new item to inventory
+  Provide option to update inventory items

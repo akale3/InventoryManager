@@ -11,17 +11,17 @@
   <nav class="navbar navbar-expand">
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item my-nav">
           <span style="padding-right:5px;"  [ngClass]="{'myClass': editor=='retailer'}">
             <a (click)="toggleEditor('retailer')" >Retailer</a>
           </span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item my-nav">
           <span style="padding-right:5px;" [ngClass]="{'myClass': editor=='wholesaler'}">
             <a (click)="toggleEditor('wholesaler')">Wholesaler</a>
           </span>
         </li>
-        <li class="nav-item" [ngClass]="{'myClass': editor=='inventory'}">
+        <li class="nav-item my-nav" [ngClass]="{'myClass': editor=='inventory'}">
           <span style="padding-right:5px;">
             <a (click)="toggleEditor('inventory')">Inventory</a>
           </span>
@@ -29,6 +29,7 @@
       </ul>
     </div>
   </nav>
+  <hr>
   <app-retailer *ngIf="showRetailerEditor"></app-retailer>
   <app-wholesaler *ngIf="showWholesalerEditor"></app-wholesaler>
   <app-inventory *ngIf="showInventoryEditor"></app-inventory>

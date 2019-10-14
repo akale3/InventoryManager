@@ -1,3 +1,9 @@
 .myClass{
   color: darkorange;
+  text-decoration: underline;
+}
+
+.my-nav{
+  padding-right: 10px;
+  font-size: x-large;
 }
